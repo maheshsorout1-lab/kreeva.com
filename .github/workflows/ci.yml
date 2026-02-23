@@ -1,29 +1,20 @@
-name: Node.js CI/CD Pipeline
+name: Simple Website CI
 
 on:
   push:
     branches:
-      - main  # Trigger the pipeline on pushing to the 'main' branch
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Use a fresh Ubuntu runner for the job
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2  # Check out your repo's code
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'  # Set up the Node.js version
+      - name: List Files
+        run: ls -R
 
-      - name: Install dependencies
-        run: npm install  # Install the dependencies using npm
-
-      - name: Run tests
-        run: npm test  # Run tests using npm
-
-      - name: Deploy to Production
-        run: |
-          echo "Deploying to production..."  # Placeholder for deployment command
+      - name: Build/Deploy Placeholder
+        run: echo "Static website is ready"
