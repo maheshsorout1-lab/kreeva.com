@@ -1,4 +1,4 @@
-name: Simple Website CI
+name: Static Website CI
 
 on:
   push:
@@ -16,5 +16,5 @@ jobs:
       - name: List Files
         run: ls -R
 
-      - name: Build/Deploy Placeholder
-        run: echo "Static website is ready"
+      - name: Build / Deploy Placeholder
+        run: echo "Static website files are ready!"
