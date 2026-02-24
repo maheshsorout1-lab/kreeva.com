@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kreeva Real Estate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         h1 {
+            font-size: 90px;
+            font-weight: bold;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        header {
+            background: #1e3c72;
+            color: red;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #16325c;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994') no-repeat center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 40px;
+        }
+        .container {
+            padding: 40px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+        .about, .contact {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        button {
+            background: #1e3c72;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #16325c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kreeva Real Estate</h1>
+    <p>Your Trusted Property Partner</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+    <h1>Find Your Dream Home</h1>
+    <p>Buy • Sell • Rent Properties Easily</p>
+</section>
+
+<div class="container">
+
+    <h2 id="properties" class="section-title">Featured Properties</h2>
+    <div class="properties">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c" alt="House">
+            <div class="card-content">
+                <h3>Luxury Villa</h3>
+                <p>4 BHK, Swimming Pool, Garden</p>
+                <p class="price">₹ 1.2 Crore</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Apartment">
+            <div class="card-content">
+                <h3>Modern Apartment</h3>
+                <p>3 BHK, City Center</p>
+                <p class="price">₹ 75 Lakhs</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="House">
+            <div class="card-content">
+                <h3>Family Home</h3>
+                <p>3 BHK, Parking Available</p>
+                <p class="price">₹ 60 Lakhs</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Kreeva Real Estate is a trusted property consultant helping clients
+            buy, sell, and rent residential and commercial properties.
+            We believe in transparency, trust, and customer satisfaction.
+        </p>
+    </div>
+
+    <div id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Kreeva Real Estate | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
